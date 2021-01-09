@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/stylebiit.css">
+</head>
+<body>
+    <div class="page">
+    <div class="form">
+        <input type="text" value="33Uzupd206JH3MJqcEa5E47raazQYnu173" id="myInput">
+  <div class="button-btn">
+    <button
+   type="submit" class="submit-btn" onclick="myFunction()">copy</button>
+
+   <button
+   type="submit" class="submit-btn"><a href="index.html">Home</a></button>
+</div>
+</div>
+   <!--js code-->
+    <script>
+     function myFunction(){
+         var copyText = document.getElementById("myInput");
+          copyText.select();
+          copyText.setSelectionRange(0,9999);
+          document.execCommand("copy");
+          alert("Bitcoin Wallet Address Copied!!!")
+     }
+     </script>
+    </form>
+</body>
+</html>
